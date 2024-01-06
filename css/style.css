@@ -1,0 +1,214 @@
+/*Custom Colors*/
+:root{
+    --ct-bs-primary: #f1aeb5;
+    --pastel-blue: #a7c7e7;
+    --pastel-pink: #f3bac3;
+    --pastel-yellow: #fdfd96;
+}
+/*Define the page height, width, and margins*/
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+/*Set the background color*/
+body {
+    background-color: #e0efff; /* This is a placeholder for the actual gradient background */
+    font-family: 'Open Sans', sans-serif;
+}
+/*Custom Color*/
+.ct-bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: var(--ct-bs-primary)!important;
+}
+
+/*Customize the Dropdown Menu*/
+.ct-dropdown-menu-dark {
+    --bs-dropdown-color: #dee2e6;
+    --bs-dropdown-bg: #5e87b0;
+    --bs-dropdown-border-color: var(--bs-border-color-translucent);
+    --bs-dropdown-box-shadow: ;
+    --bs-dropdown-link-color: #dee2e6;
+    --bs-dropdown-link-hover-color: #fff;
+    --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+    --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: #0d6efd;
+    --bs-dropdown-link-disabled-color: #adb5bd;
+    --bs-dropdown-header-color: #adb5bd;
+}
+/*make logo circle*/
+.logo_circle{
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+}
+
+/*custom picture of CV*/
+.cvpicture{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*custom card size*/
+.card-size{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*custom image*/
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+/*custom image*/
+#carouselExampleCaptions {
+    height: 100vh;
+}
+/*project background*/
+.bg-fixed {
+    background-image: url('../images/project background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*contact background*/
+.bg-contact-fixed {
+    background-image: url('../images/contactback.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*home background*/
+.bg-home-fixed {
+    background-image: url('../images/xy.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*video-background*/
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* video on the bottom */
+}
+/*footer*/
+#copyright {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/*custom form*/
+.ct-form {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+/*change form text color*/
+.ct-form h2 {
+    color: var(--pastel-pink);
+}
+/*custom label*/
+.ct-label {
+    color: var(--pastel-blue);
+}
+/*custom control*/
+.ct-control {
+    border-radius: 30px;
+    border: 2px solid var(--pastel-blue);
+    padding: 20px;
+    font-size: 16px;
+    background-color: white;
+}
+/*custom control:focus*/
+.ct-control:focus {
+    border-color: var(--pastel-pink);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(252, 144, 166, 0.6);
+    outline: none;
+}
+
+/*custom button*/
+.ct-btn {
+    background-color: var(--pastel-pink);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+/*custom button hover*/
+.ct-btn:hover {
+    background-color: var(--pastel-yellow);
+    color: black;
+}
+/*custom another button hover*/
+.btn:hover {
+    background-color: var(--pastel-yellow);
+    color: black;
+}
+
+/*custom icon*/
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/*custom facebook icon*/
+.facebook {
+    background-image: url("../images/facebook.svg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*custom twitter icon*/
+.twitter {
+    background-image: url("../images/Twitter.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*custom instagram icon*/
+.instagram {
+    background-image: url("../images/Instagram.svg.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+/*Defines a small icon arrangement*/
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*Define button position*/
+.fixed-bottom-right {
+    position: fixed;
+    bottom: 250px;
+    right: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}

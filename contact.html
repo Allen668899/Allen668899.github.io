@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>118 Final Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+</head>
+<body class="bg-contact-fixed">
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg ct-bg-primary navbar-dark fixed-top m-3 rounded" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo_circle" alt="logo" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-info" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="logo_circle" alt="logo">
+                </a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="CV.html">Curriculum Vitae</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3"  href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-3" href="project.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                        </a>
+                        <ul class="dropdown-menu ct-dropdown-menu-dark">
+                            <li><a class="dropdown-item fs-3" href="project.html#project1">Baking Website</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-3" href="project.html#project2">Midterm Project</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-3" href="project.html#project3">Raspberry Pi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-3" href="project.html#project4">Farm mini-game</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3 active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="my-5"><br><br><br></div>
+
+<!--contact section-->
+<div class="container my-5">
+    <div class="ct-form">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nameInput" class="form-label ct-label">Name</label>
+                <input type="text" class="form-control ct-control" id="nameInput" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+                <label for="emailInput" class="form-label ct-label">Email</label>
+                <input type="email" class="form-control ct-control" id="emailInput" placeholder="Your email">
+            </div>
+            <div class="mb-3">
+                <label for="messageTextarea" class="form-label ct-label">Message</label>
+                <textarea class="form-control ct-control" id="messageTextarea" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="ct-btn"><a href="mailto:someone@example.com">Submit</a></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div><br></div>
+<div><br></div>
+
+<!--social icons-->
+<div class="social-icons">
+    <a href="https://www.facebook.com/" class="icon facebook"></a>
+    <a href="https://twitter.com/" class="icon twitter"></a>
+    <a href="https://www.instagram.com/" class="icon instagram"></a>
+</div>
+
+<!--footer-->
+<div id="copyright">
+    <h3 class="text-white">Copyright ©️ XINGYU ZHOU C0533764</h3>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>118 Final Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg ct-bg-primary navbar-dark fixed-top m-3 rounded" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo_circle" alt="logo" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-info" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <!--                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>-->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="logo_circle" alt="logo">
+                </a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active fs-3" aria-current="page" href="CV.html">Curriculum Vitae</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-3" href="project.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                        </a>
+                        <ul class="dropdown-menu ct-dropdown-menu-dark">
+                            <li><a class="dropdown-item fs-3" href="project.html#project1">Baking Website</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-3" href="project.html#project2">Midterm Project</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-3" href="project.html#project3">Raspberry Pi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fs-3" href="project.html#project4">Farm mini-game</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning" type="submit"><a href="https://www.google.com/">Search</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--resume section-->
+<div class="container" style="margin-top: 100px;">
+    <div class=" d-flex justify-content-center">
+
+            <!-- Download button for the PDF -->
+        <a href="resume2.0.pdf" class="btn btn-primary mb-1" download="resume2.0.pdf">
+                Download PDF
+        </a>
+
+    </div>
+    <div class="d-flex justify-content-center container mt-2 mb-3">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#pdfModal">
+            Open resume PDF
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pdfModalLabel">resume</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="resume2.0.pdf" class="w-100" style="height:80vh;" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 order-md-1 col-sm-12 order-sm-2 ct-bg-primary text-bg-primary">
+            <p class="h1 text-center mt-4">RESUME</p>
+            <img src="images/me.jpeg" class="cvpicture mx-auto d-block mt-3" alt="me">
+            <p class="h1 text-center mt-4">XINGYU ZHOU</p>
+        </div>
+        <div class="col-md-6 order-md-2 col-sm-12 order-sm-1 bg-info p-5 ">
+            <div class="bg-light bg-opacity-75 p-3 border rounded">
+                <p class="h1">Education:</p><br>
+                <p class="h2">Diploma in Information and Computer System Technology</p>
+                <p class="h5">Camosun College, Victoria, BC — Expected Graduation: May 2025</p>
+                <br>
+                <p class="h2">Diploma of Computing</p>
+                <p class="h5">SIBT College, Sydney,Australia — Graduated: April 2016</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 bg-warning p-5 ">
+            <div class="bg-light bg-opacity-75 p-3 border rounded">
+            <p class="h1">Work Experience:</p>
+                <br>
+            <p class="h2">Abroad Consultant:</p>
+            <p class="h5">Shanghai New Oriental Study Abroad Consultant CHINA 2019
+                - 2020</p><br>
+            <p class="h2">Computer Entrepreneur:</p>
+            <p class="h5">CEO of Hangzhou YANYI Technology Co., LTD, CHINA
+                April 2021 - April 2023</p><br><br><br>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 ct-bg-primary p-5 ">
+            <div class="bg-light bg-opacity-75 p-3 border rounded">
+            <p class="h1">Technical Skills:</p>
+                <br>
+            <p class="h3">HTML/CSS</p>
+            <p class="h5">Capable of developing
+                responsive websites.</p><br>
+            <p class="h3">Java</p>
+            <p class="h5">intermediate Java programming
+                challenges</p><br>
+            <p class="h3">Python</p>
+            <p class="h5">Capable of crafting simple script
+                programs</p><br>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--background video-->
+<video autoplay muted loop id="video-background">
+    <source src="images/backvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div><br><br></div>
+
+<!--3 social apps link-->
+<div class="social-icons">
+    <a href="https://www.facebook.com/" class="icon facebook"></a>
+    <a href="https://twitter.com/" class="icon twitter"></a>
+    <a href="https://www.instagram.com/" class="icon instagram"></a>
+</div>
+<!--footer-->
+<div id="copyright">
+    <h3 class="text-white">Copyright ©️ XINGYU ZHOU C0533764</h3>
+</div>
+<!--bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
